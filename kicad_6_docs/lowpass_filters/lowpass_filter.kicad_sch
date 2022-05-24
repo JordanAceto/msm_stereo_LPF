@@ -6,7 +6,7 @@
 
   (title_block
     (title "M.S.M. Stereo Lowpass Filter Pedal")
-    (date "2022-05-19")
+    (date "2022-05-24")
     (rev "0")
     (comment 2 "creativecommons.org/licenses/by/4.0")
     (comment 3 "License: CC by 4.0")
@@ -2446,7 +2446,7 @@
   (symbol (lib_id "power:+15V") (at 87.63 176.53 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid bde0319d-9d7b-4ce7-b6e5-6643f4f8ca1b)
-    (property "Reference" "#PWR?" (id 0) (at 87.63 180.34 0)
+    (property "Reference" "#PWR016" (id 0) (at 87.63 180.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+15V" (id 1) (at 87.63 171.45 0))

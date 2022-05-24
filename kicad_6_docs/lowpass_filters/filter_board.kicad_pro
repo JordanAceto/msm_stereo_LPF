@@ -436,32 +436,32 @@
       ""
     ],
     [
-      "d47276f2-f1e1-4922-b8d6-e3c772ba4799",
-      "cv_generators"
+      "f00fd468-06a8-4a43-aa17-91a2d36218df",
+      "lowpass_filter_A"
+    ],
+    [
+      "7def0f9f-401a-4142-8cab-46320b6b771d",
+      "feedback_VCA"
     ],
     [
       "ea334fcf-cf1a-41a3-8906-33631897e103",
       "lowpass_filter_B"
     ],
     [
+      "7def0f9f-401a-4142-8cab-46320b6b771d",
+      "feedback_VCA"
+    ],
+    [
       "ee18751f-5a04-4d45-a8c0-fa6dc6c6994a",
       "wet_dry_mixers"
     ],
     [
-      "f00fd468-06a8-4a43-aa17-91a2d36218df",
-      "lowpass_filter_A"
+      "d47276f2-f1e1-4922-b8d6-e3c772ba4799",
+      "cv_generators"
     ],
     [
       "7b7f16c1-6ae8-4234-b033-59656ce78dca",
       "power_supply"
-    ],
-    [
-      "7def0f9f-401a-4142-8cab-46320b6b771d",
-      "feedback_VCA"
-    ],
-    [
-      "7def0f9f-401a-4142-8cab-46320b6b771d",
-      "feedback_VCA"
     ]
   ],
   "text_variables": {}

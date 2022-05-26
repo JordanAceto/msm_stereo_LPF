@@ -6,7 +6,7 @@
 
   (title_block
     (title "M.S.M. Stereo Lowpass Filter Pedal")
-    (date "2022-05-20")
+    (date "2022-05-26")
     (rev "0")
     (comment 2 "creativecommons.org/licenses/by/4.0")
     (comment 3 "License: CC by 4.0")
@@ -276,7 +276,7 @@
   (symbol (lib_id "Device:R") (at 139.7 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid ae04b926-1e75-4118-9130-dd03b8ab32b8)
-    (property "Reference" "R15" (id 0) (at 142.24 100.3299 0)
+    (property "Reference" "R1" (id 0) (at 142.24 100.3299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470k" (id 1) (at 142.24 102.8699 0)

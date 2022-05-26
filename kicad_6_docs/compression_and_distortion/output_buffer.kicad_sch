@@ -6,7 +6,7 @@
 
   (title_block
     (title "M.S.M. Stereo Lowpass Filter Pedal")
-    (date "2022-05-20")
+    (date "2022-05-26")
     (rev "0")
     (comment 2 "creativecommons.org/licenses/by/4.0")
     (comment 3 "License: CC by 4.0")
@@ -145,7 +145,7 @@
   (symbol (lib_id "Amplifier_Operational:TL072") (at 128.27 88.9 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid beec6e08-b035-4246-a20d-524f2a76ecae)
-    (property "Reference" "U3" (id 0) (at 129.54 93.98 0))
+    (property "Reference" "U4" (id 0) (at 129.54 93.98 0))
     (property "Value" "TL072" (id 1) (at 130.81 96.52 0))
     (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (id 2) (at 128.27 88.9 0)
       (effects (font (size 1.27 1.27)) hide)

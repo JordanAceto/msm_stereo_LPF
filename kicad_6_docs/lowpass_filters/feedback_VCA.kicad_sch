@@ -6,7 +6,7 @@
 
   (title_block
     (title "M.S.M. Stereo Lowpass Filter Pedal")
-    (date "2022-05-24")
+    (date "2022-06-16")
     (rev "0")
     (comment 2 "creativecommons.org/licenses/by/4.0")
     (comment 3 "License: CC by 4.0")
@@ -947,7 +947,7 @@
     (in_bom yes) (on_board yes)
     (uuid 76d71239-2ede-49ea-83e6-bdf1d6c3eb9c)
     (property "Reference" "R73" (id 0) (at 139.7 50.6222 90))
-    (property "Value" "200k" (id 1) (at 139.7 52.9336 90))
+    (property "Value" "33k" (id 1) (at 139.7 52.9336 90))
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (id 2) (at 139.7 54.102 90)
       (effects (font (size 1.27 1.27)) hide)
     )

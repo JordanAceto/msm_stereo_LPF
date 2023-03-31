@@ -7,11 +7,11 @@
 - Rate and Depth controls per LFO, all ranging from 0v to +3.3v:
 - LFO A has TRIANGLE, SQUARE, and SAMPLE & HOLD waveforms
 - LFO B is always TRIANGLE wave
-- LFO A can be switched to FAST mode, which pushed the frequency into the audio range, for scifi FX
+- LFO A can be switched to FAST mode, which pushes the frequency into the audio range for scifi FX
 
 ---
 
-### Brief overview of the algorithm:
+### Brief overview of the algorithm (not all of the features are used for this project):
 - The control signals are read by the ADC and stored in a buffer via DMA.
 - The frequency control is scaled by using a lookup table as an exponential converter.
 - Wave shape and level controls are linear.

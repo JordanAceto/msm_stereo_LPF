@@ -1439,7 +1439,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 05e95b16-6b62-44ea-8a25-dc38df4ba710)
     (property "Reference" "C2" (id 0) (at 190.5 82.55 90))
-    (property "Value" "?" (id 1) (at 190.5 85.09 90))
+    (property "Value" "10n" (id 1) (at 190.5 85.09 90))
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (id 2) (at 194.31 89.2048 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1555,7 +1555,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 27a532ef-0c09-4c62-bfbb-3624ef1c7dcb)
     (property "Reference" "C1" (id 0) (at 190.5 34.29 90))
-    (property "Value" "?" (id 1) (at 190.5 36.83 90))
+    (property "Value" "10n" (id 1) (at 190.5 36.83 90))
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (id 2) (at 194.31 40.9448 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1846,7 +1846,7 @@
     (uuid aa436904-5524-429e-93cc-6d6a65f39f69)
     (property "Reference" "J1" (id 0) (at 30.48 66.04 0))
     (property "Value" "AC_power_in" (id 1) (at 30.48 68.58 0))
-    (property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5566-04A2_2x02_P4.20mm_Vertical" (id 2) (at 30.48 74.93 0)
+    (property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5566-04A_2x02_P4.20mm_Vertical" (id 2) (at 30.48 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 30.48 74.93 0)
@@ -2382,10 +2382,10 @@
       (reference "#SW4") (unit 1) (value "SW_SPDT") (footprint "custom_footprints:SPDT_mini_toggle")
     )
     (path "/27a532ef-0c09-4c62-bfbb-3624ef1c7dcb"
-      (reference "C1") (unit 1) (value "?") (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (reference "C1") (unit 1) (value "10n") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/05e95b16-6b62-44ea-8a25-dc38df4ba710"
-      (reference "C2") (unit 1) (value "?") (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (reference "C2") (unit 1) (value "10n") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/6cc8d67d-f0af-4522-97bb-c57e963f3f9d/720fda08-e38e-4be5-beaa-b632b67d25fa"
       (reference "C3") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0805_2012Metric")
@@ -2409,7 +2409,7 @@
       (reference "C9") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/4cab5afe-b810-46b3-94ba-f613dce05909/6fab5011-5325-4ae8-afe8-6cd1a3fbb272"
-      (reference "C10") (unit 1) (value "3300u") (footprint "Capacitor_THT:CP_Radial_D17.0mm_P7.50mm")
+      (reference "C10") (unit 1) (value "3300u") (footprint "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm")
     )
     (path "/4cab5afe-b810-46b3-94ba-f613dce05909/ffac9709-5007-4704-8f66-7b36093713ab"
       (reference "C11") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0805_2012Metric")
@@ -2421,7 +2421,7 @@
       (reference "C13") (unit 1) (value "10u") (footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
     )
     (path "/4cab5afe-b810-46b3-94ba-f613dce05909/30fa96ad-c9c9-4229-834c-2ec93d10420f"
-      (reference "C14") (unit 1) (value "3300u") (footprint "Capacitor_THT:CP_Radial_D17.0mm_P7.50mm")
+      (reference "C14") (unit 1) (value "3300u") (footprint "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm")
     )
     (path "/4cab5afe-b810-46b3-94ba-f613dce05909/cbd0ff89-c284-432e-8a26-664af57066a8"
       (reference "C15") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0805_2012Metric")
@@ -2496,7 +2496,7 @@
       (reference "FB2") (unit 1) (value "100R @ 100MHz") (footprint "Inductor_SMD:L_0805_2012Metric")
     )
     (path "/aa436904-5524-429e-93cc-6d6a65f39f69"
-      (reference "J1") (unit 1) (value "AC_power_in") (footprint "Connector_Molex:Molex_Mini-Fit_Jr_5566-04A2_2x02_P4.20mm_Vertical")
+      (reference "J1") (unit 1) (value "AC_power_in") (footprint "Connector_Molex:Molex_Mini-Fit_Jr_5566-04A_2x02_P4.20mm_Vertical")
     )
     (path "/aeb3b2c9-24f9-4cdf-a26a-8ea198dfa225"
       (reference "J2") (unit 1) (value "power_out") (footprint "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical")
@@ -2538,13 +2538,13 @@
       (reference "R6") (unit 1) (value "6k8") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/6cc8d67d-f0af-4522-97bb-c57e963f3f9d/c1ca5964-b548-4f9e-b8b8-dbc4e7594301"
-      (reference "R7") (unit 1) (value "R") (footprint "Resistor_SMD:R_0805_2012Metric")
+      (reference "R7") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/6cc8d67d-f0af-4522-97bb-c57e963f3f9d/db1373b0-0aeb-4604-988a-b51417beff8b"
       (reference "R8") (unit 1) (value "DNF") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/6cc8d67d-f0af-4522-97bb-c57e963f3f9d/e656cab0-5f68-4d01-b288-557c94075e1f"
-      (reference "R9") (unit 1) (value "R") (footprint "Resistor_SMD:R_0805_2012Metric")
+      (reference "R9") (unit 1) (value "15k") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/6cc8d67d-f0af-4522-97bb-c57e963f3f9d/6b6485e9-1ce6-438e-ad26-4126954e82f9"
       (reference "R10") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric")
@@ -2577,7 +2577,7 @@
       (reference "SW1") (unit 1) (value "SW_SPDT_center_off") (footprint "custom_footprints:SPDT_mini_toggle")
     )
     (path "/6cc8d67d-f0af-4522-97bb-c57e963f3f9d/f61763bd-a46a-4686-a848-6a9239629577"
-      (reference "SW2") (unit 1) (value "SR1712F-0203") (footprint "custom_footprints:SR1712F_rotary_switch")
+      (reference "SW2") (unit 2) (value "SR1712F-0203") (footprint "custom_footprints:SR1712F_rotary_switch")
     )
     (path "/6cc8d67d-f0af-4522-97bb-c57e963f3f9d/06aea827-8cf3-4535-95fc-5955c405c9d7"
       (reference "SW3") (unit 1) (value "SW_SPDT") (footprint "custom_footprints:SPDT_mini_toggle")

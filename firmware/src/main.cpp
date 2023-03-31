@@ -19,9 +19,16 @@ UI ui{};
 void update_lfo_frequency();
 
 /**
- * @brief read the LFO wave shape controls and update the waveshapes for LFO A and B
+ * @brief Get the shape to be used for LFO A based on the front panel toggle switch
+ *
+ * LFO A can be one of TRIANGLE, SQUARE, or RANDOM shapes depending on the position
+ * of the front panel switch.
+ *
+ * LFO B is always set to TRIANGLE mode.
+ *
+ * @return LFO::Shape_t the shape to use for LFO A
  */
-void update_lfo_wave_scanners();
+LFO::Shape_t get_lfo_A_shape();
 
 /**
  * @brief calculate the final value to write to the DAC for output A
@@ -71,7 +78,6 @@ int main(void)
             lfo_B.tick();
 
             update_lfo_frequency();
-            update_lfo_wave_scanners();
             write_to_dacs();
         }
     }
@@ -98,15 +104,27 @@ void update_lfo_frequency()
     lfo_B.setInput(LFO::FREQ_mHz, Lookup_Tables::EXPO_MAPPING_LUT_mHz[freq_lut_idx_ui10]);
 }
 
-void update_lfo_wave_scanners()
+LFO::Shape_t get_lfo_A_shape()
 {
-    lfo_A.setInput(
-        LFO::WAVE_SCAN,
-        ui.get_control_signal_val(UI::LFO_A_SHAPE));
+    // the on-off-on toggle switch is read as an analog signal
+    int wave_select_switch_val = ui.get_control_signal_val(UI::LFO_A_SHAPE);
 
-    lfo_B.setInput(
-        LFO::WAVE_SCAN,
-        ui.get_control_signal_val(UI::LFO_B_SHAPE));
+    // the values are a result of the resistors used on the physical board, we
+    // just need to pick breakpoints that ensure that the desired shapes are
+    // returned and we're not so close to a boundary that it chatters between
+    // shapes
+    if (wave_select_switch_val < 100)
+    {
+        return LFO::RANDOM;
+    }
+    else if (wave_select_switch_val < 50000)
+    {
+        return LFO::SQUARE;
+    }
+    else
+    {
+        return LFO::TRIANGLE;
+    }
 }
 
 int calc_lfo_A_val()
@@ -120,7 +138,7 @@ int calc_lfo_A_val()
     case UI::sweep_mode::SYNC_TO_A:
     {
         retval = ui.scale_bipolar_signal(
-            lfo_A.getOutput(LFO::CROSSFADED),
+            lfo_A.getOutput(get_lfo_A_shape()),
             ui.get_control_signal_val(UI::LFO_A_LEVEL));
         break;
     }
@@ -128,11 +146,11 @@ int calc_lfo_A_val()
     case UI::sweep_mode::ADD:
     {
         auto lfo_A_contrib = ui.scale_bipolar_signal(
-            lfo_A.getOutput(LFO::CROSSFADED),
+            lfo_A.getOutput(get_lfo_A_shape()),
             ui.get_control_signal_val(UI::LFO_A_LEVEL));
 
         auto lfo_B_contrib = ui.scale_bipolar_signal(
-            lfo_B.getOutput(LFO::CROSSFADED),
+            lfo_B.getOutput(LFO::TRIANGLE),
             ui.get_control_signal_val(UI::LFO_B_LEVEL));
 
         retval = lfo_A_contrib + lfo_B_contrib;
@@ -155,7 +173,7 @@ int calc_lfo_B_val()
     case UI::sweep_mode::INDEPENDENT:
     {
         retval = ui.scale_bipolar_signal(
-            lfo_B.getOutput(LFO::CROSSFADED),
+            lfo_B.getOutput(LFO::TRIANGLE),
             ui.get_control_signal_val(UI::LFO_B_LEVEL));
 
         if (lfo_B_mode == UI::lfo_b_mode::INVERT)
@@ -168,7 +186,7 @@ int calc_lfo_B_val()
     case UI::sweep_mode::SYNC_TO_A:
     {
         retval = ui.scale_bipolar_signal(
-            lfo_A.getOutput(LFO::CROSSFADED),
+            lfo_A.getOutput(get_lfo_A_shape()),
             ui.get_control_signal_val(UI::LFO_B_LEVEL));
 
         if (lfo_B_mode == UI::lfo_b_mode::INVERT)
@@ -181,11 +199,11 @@ int calc_lfo_B_val()
     case UI::sweep_mode::ADD:
     {
         auto lfo_A_contrib = ui.scale_bipolar_signal(
-            lfo_A.getOutput(LFO::CROSSFADED),
+            lfo_A.getOutput(get_lfo_A_shape()),
             ui.get_control_signal_val(UI::LFO_A_LEVEL));
 
         auto lfo_B_contrib = ui.scale_bipolar_signal(
-            lfo_B.getOutput(LFO::CROSSFADED),
+            lfo_B.getOutput(LFO::TRIANGLE),
             ui.get_control_signal_val(UI::LFO_B_LEVEL));
 
         if (ui.get_lfo_b_mode() == UI::lfo_b_mode::INVERT)

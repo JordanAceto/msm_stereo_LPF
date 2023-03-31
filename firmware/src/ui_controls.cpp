@@ -72,7 +72,7 @@ UI::sweep_mode UI::get_sweep_mode()
     const Debounced_Switch::state_t sw1 = sweep_mode_sw_1.poll();
     const Debounced_Switch::state_t sw2 = sweep_mode_sw_2.poll();
 
-    if (sw1 == Debounced_Switch::LOW && sw2 == Debounced_Switch::HIGH)
+    if (sw1 == Debounced_Switch::HIGH && sw2 == Debounced_Switch::LOW)
     {
         return sweep_mode::INDEPENDENT;
     }
@@ -93,5 +93,5 @@ UI::lfo_b_mode UI::get_lfo_b_mode()
 
 UI::lfo_a_mode UI::get_lfo_a_mode()
 {
-    return fast_a_sw.poll() == Debounced_Switch::HIGH ? lfo_a_mode::NORMAL : lfo_a_mode::FAST;
+    return fast_a_sw.poll() == Debounced_Switch::HIGH ? lfo_a_mode::FAST : lfo_a_mode::NORMAL;
 }

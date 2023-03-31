@@ -1,0 +1,49 @@
+Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datasheet
+1,Unpolarized capacitor,C,C3 C4 C5 C8 C9 C11 C12 C15 C16 C19 C21 C22 C24 C25 C27 C28,100n,C_0805_2012Metric,16, ,~
+2,Unpolarized capacitor,C,C6 C7 C20,1u,C_0805_2012Metric,3, ,~
+3,Polarized capacitor,C_Polarized,C18,2u2,CP_Radial_D6.3mm_P2.50mm,1, ,~
+4,Polarized capacitor,C_Polarized,C13 C17,10u,CP_Radial_D6.3mm_P2.50mm,2, ,~
+5,Unpolarized capacitor,C,C23 C26,10u,C_0805_2012Metric,2, ,~
+6,Polarized capacitor,C_Polarized,C10 C14,3300u,CP_Radial_D18.0mm_P7.50mm,2, ,~
+7,Unpolarized capacitor,C,C1 C2,?,C_0805_2012Metric,2, ,~
+8,"100V 1A General Purpose Rectifier Diode, DO-41",1N4002,D1 D2 D3 D4 D5 D6 D7 D8,1N4002,D_DO-41_SOD81_P10.16mm_Horizontal,8, ,http://www.vishay.com/docs/88503/1n4001.pdf
+9,"Ferrite bead, small symbol",FerriteBead_Small,FB1 FB2,100R @ 100MHz,L_0805_2012Metric,2, ,~
+10,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x04,J1,AC_power_in,Molex_Mini-Fit_Jr_5566-04A_2x02_P4.20mm_Vertical,1, ,~
+11,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03,J6,filter_board_port,Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical,1, ,~
+12,"Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_02x05_Odd_Even,J2 J3 J4 J5,power_out,IDC-Header_2x05_P2.54mm_Vertical,4, ,~
+13,"Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x05,J7,rate_pot,Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical,1, ,~
+14,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x04,J8,swd_header,PinHeader_1x04_P2.54mm_Vertical,1, ,~
+15,Resistor,R,R7 R9,R,R_0805_2012Metric,2, ,~
+16,Resistor,R,R12 R13,240,R_0805_2012Metric,2, ,~
+17,Resistor,R,R3 R6,6k8,R_0805_2012Metric,2, ,~
+18,Resistor,R,R10 R11,10k,R_0805_2012Metric,2, ,~
+19,Resistor,R,R2 R5,33k,R_0805_2012Metric,2, ,~
+20,Resistor,R,R1 R4,100k,R_0805_2012Metric,2, ,~
+21,Trim-potentiometer,R_Potentiometer_Trim,RV5 RV6,5k,Potentiometer_Bourns_3296W_Vertical,2, ,~
+22,Potentiometer,R_Potentiometer,RV1 RV2 RV3,10k,Potentiometer_Alpha_RD901F-40-00D_Single_Vertical,3, ,~
+23,4 rotary switches with 3 positions,SR1712F-0203,SW2,SR1712F-0203,SR1712F_rotary_switch,1, ,
+24,"Switch, single pole double throw",SW_SPDT,SW3,SW_SPDT,SPDT_mini_toggle,1, ,~
+25,"Switch, single pole double throw",SW_SPDT,SW1,SW_SPDT_center_off,SPDT_mini_toggle,1, ,~
+26,"Positive 100mA 30V Linear Regulator, Fixed Output 3.3V, SOT-89",L78L33_SOT89,U5,L78L33_SOT89,SOT-89-3,1, ,http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf
+27,"1.5A 35V Adjustable Linear Regulator, TO-220",LM317_TO-220,U4,LM317_TO-220,TO-220F-3_Horizontal_TabDown,1, ,http://www.ti.com/lit/ds/symlink/lm317.pdf
+28,"Negative 1.5A 35V Adjustable Linear Regulator, TO-220",LM337_TO220,U6,LM337_TO220,TO-220F-3_Horizontal_TabDown,1, ,http://www.ti.com/lit/ds/symlink/lm337-n.pdf
+29,2-Channel 12-Bit D/A Converters with SPI Interface and Internal Reference (2.048V),MCP4822,U3,MCP4822,TSSOP-8_3x3mm_P0.65mm,1, ,http://ww1.microchip.com/downloads/en/DeviceDoc/20002249B.pdf
+30,"ARM Cortex-M0+ MCU, 16KB flash, 8KB RAM, 32MHz, 1.65-3.6V, 15 GPIO, TSSOP-20",STM32L031F4Px,U2,STM32L031F4Px,TSSOP-20_4.4x6.5mm_P0.65mm,1, ,http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00140359.pdf
+31,"Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8",TL072,U1,TL072,SOIC-8_3.9x4.9mm_P1.27mm,1, ,http://www.ti.com/lit/ds/symlink/tl071.pdf
+
+
+
+
+
+Project info:
+Schematic:,lfo_and_power_supply
+Variant:,default
+Revision:,0
+Date:,2022-06-07
+KiCad Version:,6.0.5+dfsg-1~bpo11+1
+Statistics:
+Component Groups:,32
+Component Count:,73 (41 SMD/ 31 THT)
+Fitted Components:,72 (40 SMD/ 31 THT)
+Number of PCBs:,1
+Total Components:,72

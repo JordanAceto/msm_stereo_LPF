@@ -2,3 +2,8 @@ fp-info-cache
 *-backups
 *.bak
 *kicad_prl
+.vscode
+*.bin
+*.elf
+*.list
+*.o

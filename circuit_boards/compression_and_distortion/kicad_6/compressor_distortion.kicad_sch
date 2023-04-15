@@ -6,8 +6,8 @@
 
   (title_block
     (title "M.S.M. Stereo Lowpass Filter Pedal")
-    (date "2022-05-26")
-    (rev "0")
+    (date "2023-04-15")
+    (rev "0.1")
     (comment 2 "creativecommons.org/licenses/by/4.0")
     (comment 3 "License: CC by 4.0")
     (comment 4 "Author: Jordan Aceto")
@@ -2088,15 +2088,15 @@
     (pin "6" (uuid b708a675-1753-4e08-a674-945c291d6142))
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 20.32 59.69 0) (mirror y) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 20.32 62.23 180) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid cdbd1d97-fd50-4d5d-98ae-52a15ababf98)
     (property "Reference" "J1" (id 0) (at 20.32 50.8 0))
     (property "Value" "dry_in" (id 1) (at 20.32 53.34 0))
-    (property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" (id 2) (at 20.32 59.69 0)
+    (property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" (id 2) (at 20.32 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (id 3) (at 20.32 59.69 0)
+    (property "Datasheet" "~" (id 3) (at 20.32 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2f688c6f-2c0b-427b-a929-23c202ff5d01))
@@ -2924,10 +2924,10 @@
       (reference "R43") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/8a27587f-d1cd-4e5e-8c37-1c9be5f06308/84605a75-e941-4ac7-ae98-08f69b5b13cb"
-      (reference "R44") (unit 1) (value "3k3") (footprint "Resistor_SMD:R_0805_2012Metric")
+      (reference "R44") (unit 1) (value "100") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/8a27587f-d1cd-4e5e-8c37-1c9be5f06308/1ba93d4d-7c8f-4935-9cd9-b543f503dc19"
-      (reference "R45") (unit 1) (value "3k3") (footprint "Resistor_SMD:R_0805_2012Metric")
+      (reference "R45") (unit 1) (value "100") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/7f86df69-acb0-4c00-b743-ed1f86528b3b/41961c06-24a8-4569-a7c3-7889fc212ff6"
       (reference "RV1") (unit 1) (value "100k") (footprint "Potentiometer_THT:Potentiometer_Alpha_RD902F-40-00D_Dual_Vertical")

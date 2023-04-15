@@ -6,8 +6,8 @@
 
   (title_block
     (title "M.S.M. Stereo Lowpass Filter Pedal")
-    (date "2022-05-26")
-    (rev "0")
+    (date "2023-04-15")
+    (rev "0.1")
     (comment 2 "creativecommons.org/licenses/by/4.0")
     (comment 3 "License: CC by 4.0")
     (comment 4 "Author: Jordan Aceto")
@@ -452,7 +452,7 @@
     (in_bom yes) (on_board yes)
     (uuid 1ba93d4d-7c8f-4935-9cd9-b543f503dc19)
     (property "Reference" "R45" (id 0) (at 142.24 78.74 90))
-    (property "Value" "3k3" (id 1) (at 142.24 81.28 90))
+    (property "Value" "100" (id 1) (at 142.24 81.28 90))
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (id 2) (at 142.24 73.152 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -540,7 +540,7 @@
     (in_bom yes) (on_board yes)
     (uuid 84605a75-e941-4ac7-ae98-08f69b5b13cb)
     (property "Reference" "R44" (id 0) (at 144.78 127 90))
-    (property "Value" "3k3" (id 1) (at 144.78 129.54 90))
+    (property "Value" "100" (id 1) (at 144.78 129.54 90))
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (id 2) (at 144.78 121.412 90)
       (effects (font (size 1.27 1.27)) hide)
     )

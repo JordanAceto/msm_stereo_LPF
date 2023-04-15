@@ -6386,7 +6386,7 @@
   (gr_text "BO" (at 96.52 123.19) (layer "B.SilkS") (tstamp 478f1a13-d075-437c-8246-2af38c728a23)
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
-  (gr_text "Compressor and\nDistortion board\nrev 0\n2022-05-22" (at 132.715 52.705) (layer "B.SilkS") (tstamp 58a930c9-b7b7-4a74-8671-9fdd0e341b0f)
+  (gr_text "Compressor and\nDistortion board\nrev 0.1\n2023-04-15" (at 132.715 52.705) (layer "B.SilkS") (tstamp 58a930c9-b7b7-4a74-8671-9fdd0e341b0f)
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (gr_text "AO" (at 124.46 175.895) (layer "B.SilkS") (tstamp 5eb8e406-770c-4ff5-95a7-74202b15aa82)

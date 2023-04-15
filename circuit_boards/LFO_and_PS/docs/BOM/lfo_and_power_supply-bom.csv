@@ -1,11 +1,11 @@
 Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datasheet
-1,Unpolarized capacitor,C,C3 C4 C5 C8 C9 C11 C12 C15 C16 C19 C21 C22 C24 C25 C27 C28,100n,C_0805_2012Metric,16, ,~
-2,Unpolarized capacitor,C,C6 C7 C20,1u,C_0805_2012Metric,3, ,~
-3,Polarized capacitor,C_Polarized,C18,2u2,CP_Radial_D6.3mm_P2.50mm,1, ,~
-4,Polarized capacitor,C_Polarized,C13 C17,10u,CP_Radial_D6.3mm_P2.50mm,2, ,~
-5,Unpolarized capacitor,C,C23 C26,10u,C_0805_2012Metric,2, ,~
-6,Polarized capacitor,C_Polarized,C10 C14,3300u,CP_Radial_D18.0mm_P7.50mm,2, ,~
-7,Unpolarized capacitor,C,C1 C2,?,C_0805_2012Metric,2, ,~
+1,Unpolarized capacitor,C,C1 C2,10n,C_0805_2012Metric,2, ,~
+2,Unpolarized capacitor,C,C3 C4 C5 C8 C9 C11 C12 C15 C16 C19 C21 C22 C24 C25 C27 C28,100n,C_0805_2012Metric,16, ,~
+3,Unpolarized capacitor,C,C6 C7 C20,1u,C_0805_2012Metric,3, ,~
+4,Polarized capacitor,C_Polarized,C18,2u2,CP_Radial_D6.3mm_P2.50mm,1, ,~
+5,Polarized capacitor,C_Polarized,C13 C17,10u,CP_Radial_D6.3mm_P2.50mm,2, ,~
+6,Unpolarized capacitor,C,C23 C26,10u,C_0805_2012Metric,2, ,~
+7,Polarized capacitor,C_Polarized,C10 C14,3300u,CP_Radial_D18.0mm_P7.50mm,2, ,~
 8,"100V 1A General Purpose Rectifier Diode, DO-41",1N4002,D1 D2 D3 D4 D5 D6 D7 D8,1N4002,D_DO-41_SOD81_P10.16mm_Horizontal,8, ,http://www.vishay.com/docs/88503/1n4001.pdf
 9,"Ferrite bead, small symbol",FerriteBead_Small,FB1 FB2,100R @ 100MHz,L_0805_2012Metric,2, ,~
 10,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x04,J1,AC_power_in,Molex_Mini-Fit_Jr_5566-04A_2x02_P4.20mm_Vertical,1, ,~
@@ -13,10 +13,10 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 12,"Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_02x05_Odd_Even,J2 J3 J4 J5,power_out,IDC-Header_2x05_P2.54mm_Vertical,4, ,~
 13,"Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x05,J7,rate_pot,Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical,1, ,~
 14,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x04,J8,swd_header,PinHeader_1x04_P2.54mm_Vertical,1, ,~
-15,Resistor,R,R7 R9,R,R_0805_2012Metric,2, ,~
-16,Resistor,R,R12 R13,240,R_0805_2012Metric,2, ,~
-17,Resistor,R,R3 R6,6k8,R_0805_2012Metric,2, ,~
-18,Resistor,R,R10 R11,10k,R_0805_2012Metric,2, ,~
+15,Resistor,R,R12 R13,240,R_0805_2012Metric,2, ,~
+16,Resistor,R,R3 R6,6k8,R_0805_2012Metric,2, ,~
+17,Resistor,R,R7 R10 R11,10k,R_0805_2012Metric,3, ,~
+18,Resistor,R,R9,15k,R_0805_2012Metric,1, ,~
 19,Resistor,R,R2 R5,33k,R_0805_2012Metric,2, ,~
 20,Resistor,R,R1 R4,100k,R_0805_2012Metric,2, ,~
 21,Trim-potentiometer,R_Potentiometer_Trim,RV5 RV6,5k,Potentiometer_Bourns_3296W_Vertical,2, ,~

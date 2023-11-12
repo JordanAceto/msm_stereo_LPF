@@ -7,6 +7,5 @@
 - `LFO_and_PS` contains a regulated bipolar DC power supply and digital LFO
 
 ### Each circuit board has a subdirectory with
-- KiCad 6 project files with KiCad
+- KiCad 7 project files with KiCad
 - Documentation needed to build the board in `docs`
-- HTML file `index.html` for easy navigation of the documentation files

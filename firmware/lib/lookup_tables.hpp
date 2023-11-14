@@ -9,6 +9,6 @@ namespace Lookup_Tables
 // the sine LUT, range: [-2047, 2047], centered around 0
 extern const int16_t SINE_LUT[1024];
 
-// the exponential mapping LUT, range: [33, 50000], units: millihertz
+// the exponential mapping LUT, range: [33, 20000], units: millihertz
 extern const uint16_t EXPO_MAPPING_LUT_mHz[1024];
 }
